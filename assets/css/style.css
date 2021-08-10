@@ -25,6 +25,7 @@ header h1 {
   color: #fce138;
   margin: 0;
 }
+
 header a {
   text-decoration: none;
   color: #fce138;
@@ -170,12 +171,6 @@ section {
   font-size: 46px;
 }
 
-.step h4 {
-  font-size: 26px;
-  line-height: 1.5;
-  color: #024e76;
-}
-
 .step-text h4 {
   font-size: 26px;
   line-height: 1.5;
@@ -225,6 +220,8 @@ section {
   border-color: #39a6b2;
 }
 
+/* MEET THE TRAINERS SECTION */
+
 .trainers {
   width: 100%;
   margin: 0 auto;
@@ -234,7 +231,7 @@ section {
 }
 
 .trainer {
-  margin: 0 auto 20px auto;
+  margin: 20px;
   background: #024e76;
   color: #fce138;
   flex: 1;
@@ -271,11 +268,8 @@ section {
   text-align: right;
 }
 
-.flex-row {
-  display: flex;
-}
-
 /* REACH OUT STYLES START */
+
 .contact {
   background: #024e76;
 }
@@ -285,16 +279,10 @@ section {
 }
 
 .contact-info iframe {
-  width: 400px;
   height: 400px;
 }
 
 .contact-info div {
-  width: 410px;
-  display: inline-block;
-  vertical-align: top;
-  text-align: left;
-  margin: 30px 0 0 60px;
   color: white;
 }
 
@@ -303,16 +291,47 @@ section {
   font-size: 32px;
 }
 
-.contact-info p,
-.contact-info address {
+.contact-info p, .contact-info address {
   margin: 20px 0;
   line-height: 1.5;
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
 }
 
 .contact-info a {
   color: #fce138;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact-info > * {
+  flex: 1;
+  margin: 15;
+}
+
+.contact-form input, .contact-form textarea {
+  border: 1px solid #024e76;
+  display: block;
+  padding: 7px 15px; 
+  font-size: 16px;
+  color: #024e76;
+  width: 100%;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+
+.contact-form button {
+  width: 100%;
+  border: none;
+  background: #fce138;
+  color: #024e76;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 16px;
 }
 
 /* REACH OUT STYLES END */
